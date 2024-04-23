@@ -1,49 +1,41 @@
 Análisis de Regresión Lineal Múltiple
 
-Este repositorio contiene un script de Python para realizar un análisis de regresión lineal múltiple utilizando el módulo statsmodels y pandas. El análisis se realiza sobre un conjunto de datos que incluye puntuaciones SAT y otras variables predictoras para predecir el GPA de los estudiantes universitarios.
-Archivos
+Este repositorio contiene un análisis detallado de regresión lineal múltiple realizado en Python utilizando bibliotecas como NumPy, Pandas, Matplotlib, Statsmodels y Seaborn. El análisis se centra en la relación entre las puntuaciones SAT, las variables aleatorias (Rand 1,2,3) y los promedios universitarios de calificaciones (GPA).
+Contenido del Repositorio
 
-    multiple_linear_regression.py: Este script de Python carga los datos desde un archivo CSV, realiza un análisis de regresión lineal múltiple y muestra un resumen de los resultados.
+El repositorio contiene los siguientes archivos:
 
-    1.02. Multiple linear regression.csv: El archivo CSV que contiene los datos necesarios para el análisis. Incluye columnas para las puntuaciones SAT, el GPA y otras variables predictoras.
+    1.02. Multiple linear regression.csv: Este archivo CSV contiene los datos utilizados en el análisis. Contiene tres columnas: SAT (puntuaciones SAT), Rand 1,2,3 (variables aleatorias) y GPA (promedios universitarios de calificaciones).
 
-Dependencias
+    multiple_regression_analysis.ipynb: Este es el cuaderno de Jupyter utilizado para realizar el análisis. Contiene el código Python junto con explicaciones detalladas y visualizaciones del proceso de regresión lineal múltiple.
 
-El script requiere las siguientes bibliotecas de Python:
+Requisitos
 
-    numpy: Para operaciones numéricas.
-    pandas: Para la manipulación y análisis de datos.
-    matplotlib: Para visualización de datos.
-    statsmodels: Para realizar el análisis de regresión lineal.
-    seaborn: Para mejorar la visualización de los resultados.
+Para ejecutar el código en el cuaderno de Jupyter, se requieren las siguientes bibliotecas de Python:
 
-Para instalar las dependencias, puedes utilizar el siguiente comando:
+    NumPy
+    Pandas
+    Matplotlib
+    Statsmodels
+    Seaborn
 
-bash
+Se puede instalar estas bibliotecas mediante el gestor de paquetes pip. Por ejemplo:
 
 pip install numpy pandas matplotlib statsmodels seaborn
 
-Uso
+Ejecución del Análisis
 
-    Clona este repositorio o descarga los archivos multiple_linear_regression.py y 1.02. Multiple linear regression.csv en tu sistema local.
+Para ejecutar el análisis, simplemente abre el cuaderno de Jupyter multiple_regression_analysis.ipynb en tu entorno de Jupyter Notebook y ejecuta las celdas secuencialmente. Asegúrate de tener el archivo CSV 1.02. Multiple linear regression.csv en el mismo directorio que el cuaderno.
+Detalles del Análisis
 
-    Abre una terminal o línea de comandos y navega hasta el directorio donde guardaste los archivos.
+El análisis sigue los siguientes pasos:
 
-    Ejecuta el script multiple_linear_regression.py usando Python:
+    Importación de bibliotecas y lectura de datos desde el archivo CSV.
+    Verificación de los datos y estadísticas descriptivas.
+    Definición de la variable dependiente (GPA) y las variables independientes (SAT y Rand 1,2,3).
+    Ajuste de un modelo de regresión lineal múltiple utilizando statsmodels.
+    Resumen detallado de los resultados del análisis.
 
-    bash
+Resultados
 
-    python multiple_linear_regression.py
-
-    El script cargará los datos, realizará el análisis de regresión lineal múltiple y mostrará un resumen de los resultados en la terminal.
-
-Detalles Técnicos
-
-El script sigue los siguientes pasos para realizar el análisis de regresión lineal múltiple:
-
-    Carga los datos desde el archivo CSV utilizando pandas.
-    Preprocesa los datos si es necesario, como la eliminación de valores nulos o la codificación de variables categóricas.
-    Define las variables dependientes e independientes.
-    Agrega una constante a las variables independientes para incluir el término de intercepción en el modelo de regresión.
-    Ajusta el modelo de regresión lineal utilizando el método de Mínimos Cuadrados Ordinarios (OLS) de statsmodels.
-    Muestra un resumen de los resultados, que incluye coeficientes de regresión, errores estándar, valores p, R2R2 y Rajustado2Rajustado2​.
+El análisis proporciona información sobre la relación entre las puntuaciones SAT, las variables aleatorias y los promedios universitarios de calificaciones. Proporciona coeficientes de regresión que pueden utilizarse para predecir el GPA en función de las puntuaciones SAT y las variables aleatorias.
