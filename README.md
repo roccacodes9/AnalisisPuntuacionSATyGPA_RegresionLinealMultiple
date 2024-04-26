@@ -1,4 +1,4 @@
-Título del Repositorio: Análisis de Regresión Lineal Múltiple y R2R2 Ajustado
+Análisis de Regresión Lineal Múltiple y R2R2 Ajustado
 
 Contenido del Repositorio:
 
