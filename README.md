@@ -1,41 +1,34 @@
-Análisis de Regresión Lineal Múltiple
+Título del Repositorio: Análisis de Regresión Lineal Múltiple y R2R2 Ajustado
 
-Este repositorio contiene un análisis detallado de regresión lineal múltiple realizado en Python utilizando bibliotecas como NumPy, Pandas, Matplotlib, Statsmodels y Seaborn. El análisis se centra en la relación entre las puntuaciones SAT, las variables aleatorias (Rand 1,2,3) y los promedios universitarios de calificaciones (GPA).
-Contenido del Repositorio
+Contenido del Repositorio:
 
-El repositorio contiene los siguientes archivos:
+    Jupyter Notebook (Archivo Python):
+        Contiene el código para realizar un análisis de regresión lineal múltiple utilizando el conjunto de datos proporcionado en el archivo "1.02. Multiple linear regression.csv".
+        Importa las bibliotecas relevantes, carga los datos, realiza la regresión lineal múltiple, y muestra un resumen de los resultados, incluido el R2R2 ajustado.
 
-    1.02. Multiple linear regression.csv: Este archivo CSV contiene los datos utilizados en el análisis. Contiene tres columnas: SAT (puntuaciones SAT), Rand 1,2,3 (variables aleatorias) y GPA (promedios universitarios de calificaciones).
+    Archivo CSV:
+        "1.02. Multiple linear regression.csv": El conjunto de datos utilizado para el análisis, que contiene las variables SAT, GPA y Rand 1,2,3.
 
-    multiple_regression_analysis.ipynb: Este es el cuaderno de Jupyter utilizado para realizar el análisis. Contiene el código Python junto con explicaciones detalladas y visualizaciones del proceso de regresión lineal múltiple.
+    README.md:
+        Proporciona una descripción general del repositorio y cómo utilizar el código proporcionado.
 
-Requisitos
+Requisitos de Ejecución del Análisis:
 
-Para ejecutar el código en el cuaderno de Jupyter, se requieren las siguientes bibliotecas de Python:
+    Python 3.x
+    Bibliotecas:
+        numpy
+        pandas
+        matplotlib
+        statsmodels
+        seaborn
 
-    NumPy
-    Pandas
-    Matplotlib
-    Statsmodels
-    Seaborn
+Detalles del Análisis:
 
-Se puede instalar estas bibliotecas mediante el gestor de paquetes pip. Por ejemplo:
+    El análisis se realiza utilizando regresión lineal múltiple para predecir el GPA (puntuación promedio ponderada) de los estudiantes utilizando las variables SAT y Rand 1,2,3.
+    Se ajusta un modelo de regresión lineal múltiple y se muestra un resumen de los resultados utilizando la biblioteca statsmodels.
+    Se evalúa el coeficiente de determinación ajustado (R2R2 ajustado) para entender qué proporción de la variabilidad en el GPA se explica por el modelo de regresión, considerando el número de predictores en el modelo.
 
-pip install numpy pandas matplotlib statsmodels seaborn
+Resultado del Análisis:
 
-Ejecución del Análisis
-
-Para ejecutar el análisis, simplemente abre el cuaderno de Jupyter multiple_regression_analysis.ipynb en tu entorno de Jupyter Notebook y ejecuta las celdas secuencialmente. Asegúrate de tener el archivo CSV 1.02. Multiple linear regression.csv en el mismo directorio que el cuaderno.
-Detalles del Análisis
-
-El análisis sigue los siguientes pasos:
-
-    Importación de bibliotecas y lectura de datos desde el archivo CSV.
-    Verificación de los datos y estadísticas descriptivas.
-    Definición de la variable dependiente (GPA) y las variables independientes (SAT y Rand 1,2,3).
-    Ajuste de un modelo de regresión lineal múltiple utilizando statsmodels.
-    Resumen detallado de los resultados del análisis.
-
-Resultados
-
-El análisis proporciona información sobre la relación entre las puntuaciones SAT, las variables aleatorias y los promedios universitarios de calificaciones. Proporciona coeficientes de regresión que pueden utilizarse para predecir el GPA en función de las puntuaciones SAT y las variables aleatorias.
+    El análisis revela que el R2R2 ajustado del modelo de regresión lineal múltiple es aproximadamente 0.392, lo que indica que alrededor del 39.2% de la variabilidad en el GPA se explica por las variables SAT y Rand 1,2,3 incluidas en el modelo.
+    Los coeficientes estimados para las variables SAT y Rand 1,2,3 también se muestran en el resumen, junto con sus estadísticas asociadas, como el valor t y el valor p. Estos coeficientes proporcionan información sobre la relación entre las variables predictoras y la variable de respuesta (GPA).
